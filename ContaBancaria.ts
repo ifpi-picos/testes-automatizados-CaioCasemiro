@@ -1,8 +1,8 @@
 export default class ContaBancaria {
-        private numeroConta:number;
-        private agencia:number;
-        private saldo:number
-        private extrato:string[]
+        public numeroConta:number; //Representa o número da conta bancária.
+        public agencia:number; //Representa o número da agência bancária.
+        public saldo:number //Armazena o saldo atual da conta.
+        public extrato:string[] //Armazena o histórico de operações realizadas na conta (depósitos, saques, transferências).
 
         constructor(numeroConta:number, agencia: number, saldo: number, extrato:string[]){
             this.numeroConta = numeroConta
@@ -11,5 +11,7 @@ export default class ContaBancaria {
             this.extrato = extrato
         }
 
-        
+        public depositar(){
+            
+        }
 }
